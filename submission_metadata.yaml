@@ -1,0 +1,12 @@
+team_name: "M Kavya Sri"
+track: "Track 1 - Data & AI Challenge"
+github_repo: "https://github.com/Kavyasrimedi/redrob-candidate-ranker"
+sandbox_url: "https://kavyasrimedi-resume-ranker.streamlit.app/"
+submission_file: "medikavyasri40@gmail.com.csv"
+approach_summary: >
+  Rule-based candidate ranking pipeline using weighted scoring across
+  title trajectory, skill quality (proficiency + endorsements + duration),
+  experience band fit, company type, and Redrob behavioral signals.
+  Hard filters eliminate ~61% irrelevant candidates early. Honeypot
+  detection zeros out 10 fabricated-experience profiles. Final score =
+  raw_score * (1 - honeypot_penalty) * signal_multiplier.
